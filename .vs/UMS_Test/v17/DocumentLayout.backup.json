@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35BE0179-333B-4E87-84C7-F7E51D3562A3}|UMS_Test\\UMS.UI.Test.ERP.csproj|c:\\users\\opl\\source\\repos\\ums_test\\ums_test\\login\\umsloginstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BE0179-333B-4E87-84C7-F7E51D3562A3}|UMS_Test\\UMS.UI.Test.ERP.csproj|solutionrelative:ums_test\\login\\umsloginstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BE0179-333B-4E87-84C7-F7E51D3562A3}|UMS_Test\\UMS.UI.Test.ERP.csproj|c:\\users\\opl\\source\\repos\\ums_test\\ums_test\\login\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BE0179-333B-4E87-84C7-F7E51D3562A3}|UMS_Test\\UMS.UI.Test.ERP.csproj|solutionrelative:ums_test\\login\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35BE0179-333B-4E87-84C7-F7E51D3562A3}|UMS_Test\\UMS.UI.Test.ERP.csproj|c:\\users\\opl\\source\\repos\\ums_test\\ums_test\\testfiles\\hooks\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35BE0179-333B-4E87-84C7-F7E51D3562A3}|UMS_Test\\UMS.UI.Test.ERP.csproj|solutionrelative:ums_test\\testfiles\\hooks\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1461,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1257,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hooks.cs",
+              "DocumentMoniker": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS_Test\\TestFiles\\Hooks\\Hooks.cs",
+              "RelativeDocumentMoniker": "UMS_Test\\TestFiles\\Hooks\\Hooks.cs",
+              "ToolTip": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS_Test\\TestFiles\\Hooks\\Hooks.cs",
+              "RelativeToolTip": "UMS_Test\\TestFiles\\Hooks\\Hooks.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwv04AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T05:39:32.508Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1257,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UMSLoginStep.cs",
+              "DocumentMoniker": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS_Test\\Login\\UMSLoginStep.cs",
+              "RelativeDocumentMoniker": "UMS_Test\\Login\\UMSLoginStep.cs",
+              "ToolTip": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS_Test\\Login\\UMSLoginStep.cs",
+              "RelativeToolTip": "UMS_Test\\Login\\UMSLoginStep.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T04:58:52.546Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "b2c62c2c-2492-44cc-bfed-47677a9e5efd",
+        "Display": 1,
+        "X": 78,
+        "Y": 179,
+        "Width": 1773,
+        "Height": 857,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS_Test\\Login\\LoginPage.cs",
+              "RelativeDocumentMoniker": "UMS_Test\\Login\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS_Test\\Login\\LoginPage.cs",
+              "RelativeToolTip": "UMS_Test\\Login\\LoginPage.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T04:58:31.469Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
