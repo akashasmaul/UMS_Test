@@ -7,12 +7,12 @@ namespace UMS.UI.Test.ERP.Areas.Student.Admission
     public class NewStudnetAdmissionStep
     {
         private readonly NewAdmissionPage _page;
-        private readonly IWebDriver driver;
+        private readonly IWebDriver _driver;
 
         private NewStudnetAdmissionStep(NewAdmissionPage _pageObj, IWebDriver driverObj)
         {
             _page = _pageObj;
-            driver = driverObj;
+            _driver = driverObj;
         }
 
         [Given("User navigates to Student Admission Page")]
@@ -28,7 +28,7 @@ namespace UMS.UI.Test.ERP.Areas.Student.Admission
 
             JsonHelper _jsonHelper = new JsonHelper();
             var baseUrl = _jsonHelper.BaseURL;
-            driver.Navigate().GoToUrl(baseUrl + "Student/Admission/NewStudentAdmission");
+            _driver.Navigate().GoToUrl(baseUrl + "Student/Admission/NewStudentAdmission");
         }
 
         [When("Enter The Student Nickname {string}")]
@@ -165,7 +165,7 @@ namespace UMS.UI.Test.ERP.Areas.Student.Admission
         [When("Click On Admission Payment Next Button")]
         public void WhenClickOnAdmissionPaymentNextButton()
         {
-            _page.NextBtn().Click();
+            _page.ClickNext();
 
         }
 

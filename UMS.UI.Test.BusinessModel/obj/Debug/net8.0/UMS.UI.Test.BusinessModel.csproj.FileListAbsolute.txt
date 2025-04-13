@@ -160,3 +160,4 @@ C:\Users\OPL\source\repos\UMS_Test\UMS.UI.Test.BusinessModel\bin\Debug\net8.0\ru
 C:\Users\OPL\source\repos\UMS_Test\UMS.UI.Test.BusinessModel\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\OPL\source\repos\UMS_Test\UMS.UI.Test.BusinessModel\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll
 C:\Users\OPL\source\repos\UMS_Test\UMS.UI.Test.BusinessModel\bin\Debug\net8.0\FluentAssertions.dll
+C:\Users\OPL\source\repos\UMS_Test\UMS.UI.Test.BusinessModel\obj\Debug\net8.0\UMS.UI.Test.BusinessModel.sourcelink.json

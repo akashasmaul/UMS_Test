@@ -251,28 +251,34 @@ namespace UMS.UI.Test.ERP.Areas.Student.Admission
 
         public void SelectbatchTime(string batchTime)
         {
-            int batchTimeLocal;
+            string batchTimeLocal = batchTime;
 
             if (batchTime == "1:30 PM To 4:00 PM" || batchTime == "1")
-            { batchTimeLocal = 1; }
+            { batchTimeLocal = "1:30 PM To 4:00 PM"; }
             else if (batchTime == "10:15 AM To 12:45 PM" || batchTime == "2")
-            { batchTimeLocal = 2; }
+            { batchTimeLocal = "10:15 AM To 12:45 PM"; }
             else if (batchTime == "4:15 PM To 6:45 PM" || batchTime == "3")
-            { batchTimeLocal = 3; }
+            { batchTimeLocal = "4:15 PM To 6:45 PM"; }
             else if (batchTime == "7:15 AM To 9:45 AM" || batchTime == "4")
-            { batchTimeLocal = 4; }
-            else { batchTimeLocal = 0; Console.WriteLine("Invalid Batch Type Found. Default Selected"); }
+            { batchTimeLocal = "7:15 AM To 9:45 AM"; }
+            else { batchTimeLocal = batchTime; Console.WriteLine("Invalid Batch Type Found. Default Selected"); }
 
             if (programId == "82") //Varsity 'Ka'
             { courseId = "1445"; }
 
             xBatchTime = By.XPath($"//select[contains(@class, 'batch-time-course') and @data-course-id='{courseId}']");
             SelectElement select = new SelectElement(driver.FindElement(xBatchTime));
-            select.SelectByIndex(batchTimeLocal);
+            select.SelectByValue(batchTimeLocal);
             Console.WriteLine("Check");
         }
 
         public IWebElement NextBtn() => driver.FindElement(xNewAdmissionNextBtn);
+        public void ClickNext()
+        {
+            var element = NextBtn();
+            ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", element);
+            element.Click();
+        }
 
         public IWebElement SpecialDiscount() => driver.FindElement(xSpecialDiscount);
 
