@@ -28,7 +28,6 @@
   <ItemGroup>
     <Folder Include="TestData\Student\ImageUpload\" />
     <Folder Include="TestFiles\Reports\" />
-    <Folder Include="TestFiles\Support\" />
   </ItemGroup>
 
   <ItemGroup>

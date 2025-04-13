@@ -19,21 +19,21 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class ImageUploadFeature : object, Xunit.IClassFixture<ImageUploadFeature.FixtureData>, Xunit.IAsyncLifetime
+    public partial class UploadImageFeature : object, Xunit.IClassFixture<UploadImageFeature.FixtureData>, Xunit.IAsyncLifetime
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Areas/Student/Image", "ImageUpload", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Areas/Student/Image", "UploadImage", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "ImageMenuTest.feature"
+#line 1 "UploadImage.feature"
 #line hidden
         
-        public ImageUploadFeature(ImageUploadFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public UploadImageFeature(UploadImageFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
         }
@@ -92,16 +92,16 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
             await this.TestTearDownAsync();
         }
         
-        [Xunit.SkippableTheoryAttribute(DisplayName="ImageMenuTest")]
-        [Xunit.TraitAttribute("FeatureTitle", "ImageUpload")]
-        [Xunit.TraitAttribute("Description", "ImageMenuTest")]
+        [Xunit.SkippableTheoryAttribute(DisplayName="UploadImage")]
+        [Xunit.TraitAttribute("FeatureTitle", "UploadImage")]
+        [Xunit.TraitAttribute("Description", "UploadImage")]
         [Xunit.TraitAttribute("Category", "NeedsLogin")]
         [Xunit.TraitAttribute("Category", "DataSource:../../../TestData/Student/ImageUpload/ImageData.xlsx")]
         [Xunit.TraitAttribute("Category", "DataSet:Sheet1")]
         [Xunit.InlineDataAttribute("Single", "..\\..\\..\\TestData\\Student\\ImageUpload\\Image\\3163728.jpg", "Yes", new string[0])]
         [Xunit.InlineDataAttribute("Batch", "..\\..\\..\\TestData\\Student\\ImageUpload\\Image", "Yes", new string[0])]
         [Xunit.InlineDataAttribute("Single", "../../../TestData/Student/ImageUpload/Image/3333424.jpg", "Yes", new string[0])]
-        public async System.Threading.Tasks.Task ImageMenuTest(string imageType, string path, string overWrite, string[] exampleTags)
+        public async System.Threading.Tasks.Task UploadImage(string imageType, string path, string overWrite, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "NeedsLogin",
@@ -116,7 +116,7 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
             argumentsOfScenario.Add("ImageType", imageType);
             argumentsOfScenario.Add("Path", path);
             argumentsOfScenario.Add("OverWrite", overWrite);
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("ImageMenuTest", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("UploadImage", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -142,6 +142,9 @@ this.ScenarioInitialize(scenarioInfo);
 #line 10
  await testRunner.ThenAsync("Image Upload Should be Succeed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
+#line 11
+ await testRunner.ThenAsync("Click Clear Buton and Verify", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+#line hidden
             }
             await this.ScenarioCleanupAsync();
         }
@@ -153,12 +156,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             async System.Threading.Tasks.Task Xunit.IAsyncLifetime.InitializeAsync()
             {
-                await ImageUploadFeature.FeatureSetupAsync();
+                await UploadImageFeature.FeatureSetupAsync();
             }
             
             async System.Threading.Tasks.Task Xunit.IAsyncLifetime.DisposeAsync()
             {
-                await ImageUploadFeature.FeatureTearDownAsync();
+                await UploadImageFeature.FeatureTearDownAsync();
             }
         }
     }

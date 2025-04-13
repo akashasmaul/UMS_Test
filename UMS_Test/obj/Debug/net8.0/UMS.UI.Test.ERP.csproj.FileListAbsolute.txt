@@ -165,3 +165,4 @@ C:\Users\OPL\source\repos\UMS_Test\UMS_Test\bin\Debug\net8.0\SeleniumExtras.Wait
 C:\Users\OPL\source\repos\UMS_Test\UMS_Test\bin\Debug\net8.0\UMS.UI.Test.BusinessModel.dll
 C:\Users\OPL\source\repos\UMS_Test\UMS_Test\bin\Debug\net8.0\UMS.UI.Test.BusinessModel.pdb
 C:\Users\OPL\source\repos\UMS_Test\UMS_Test\bin\Debug\net8.0\FluentAssertions.dll
+C:\Users\OPL\source\repos\UMS_Test\UMS_Test\obj\Debug\net8.0\UMS.UI.Test.ERP.sourcelink.json

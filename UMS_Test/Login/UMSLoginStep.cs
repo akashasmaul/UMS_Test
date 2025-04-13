@@ -9,27 +9,23 @@ namespace UMS.UI.Test.ERP.Login
     public class UMSLoginStep
     {
         private readonly LoginPage _loginPage;
-        private readonly JsonHelper _jsonHelper;
 
-        public UMSLoginStep(IObjectContainer container)
+        public UMSLoginStep(LoginPage loginPage)
         {
-            _loginPage = container.Resolve<LoginPage>();
-            _jsonHelper = container.Resolve<JsonHelper>();
+            _loginPage = loginPage;
+            
         }
 
         [Given("Go to the URL")]
         public void GivenGoToTheURL()
         {
-            _loginPage.GoToBaseUrl(); // Call page method instead of direct driver access
+            _loginPage.GoToBaseUrl(); 
         }
 
         [Given("Give Credentials and Hit LoginBtn")]
         public void GivenGiveCredentialsAndHitLoginBtn()
         {
-            _loginPage.EnterCredentials(
-                _jsonHelper.UserName,
-                _jsonHelper.Password
-            );
+            _loginPage.PerformLogin();
         }
 
         [Then("Is Success Login")]
@@ -38,5 +34,4 @@ namespace UMS.UI.Test.ERP.Login
             Console.WriteLine("Login Successfull");
         }
     }
- }
-
+}

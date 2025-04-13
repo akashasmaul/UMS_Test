@@ -1,8 +1,0 @@
-﻿// System Processing vs UI Display
-                checkTotalSystemCount.Should().Be(checkTotalUiCount,
-                    $"System processed {checkTotalSystemCount} successes but UI shows {checkTotalUiCount}");
-
-
-                    // System Processing vs UI Display
-                systemSuccessCount.Should().Be(uiSuccessCount,
-                    $"System processed {systemSuccessCount} successes but UI shows {uiSuccessCount}");

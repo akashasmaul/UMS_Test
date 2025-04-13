@@ -3,10 +3,11 @@ using FluentAssertions.Execution;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System.Security.AccessControl;
+using UMS.UI.Test.ERP.TestFiles.Support;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace UMS.UI.Test.ERP.Areas.Student.Image
+namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage
 {
     [Binding]
     public class ImageUploadStepDefinitions
@@ -18,11 +19,14 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
 
         private readonly ImageUploadPage _page;
         private readonly ITestOutputHelper _output;
+        private readonly PathHelper _pathHelper;
 
         private ImageUploadStepDefinitions(ImageUploadPage page, ITestOutputHelper output)
         {
             _page = page;
             _output = output;
+            _pathHelper = new PathHelper();
+
         }
 
         [Given("Go to the Upload Image Page")]
@@ -40,12 +44,12 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
             {
                 if (string.Equals(imageType?.Trim(), "Single", StringComparison.OrdinalIgnoreCase))
                 {
-                    string absolutePath = GetAbsolutePath(path);
+                    string absolutePath = _pathHelper.GetAbsolutePath(path);
                     ValidateAndUploadImage(absolutePath);
                 }
                 else if (string.Equals(imageType?.Trim(), "Batch", StringComparison.OrdinalIgnoreCase))
                 {
-                    string absolutePath = GetAbsolutePath(path);
+                    string absolutePath = _pathHelper.GetAbsolutePath(path);
                     string[] files = Directory.GetFiles(absolutePath);
                     totalImageFound = files.Length;
                     _output.WriteLine($"\n\tTotal images found in folder: {totalImageFound} \n");
@@ -74,9 +78,9 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
             _page.SetOverwrite(shouldCheck);
 
             _output.WriteLine(shouldCheck
-                ? (_page.IsOverwriteChecked()
+                ? _page.IsOverwriteChecked()
                     ? "Allow Overwrite checkbox was already checked."
-                    : "Allow Overwrite checkbox is now checked.")
+                    : "Allow Overwrite checkbox is now checked."
                 : "Allow Overwrite checkbox is not checked based on input.");
         }
 
@@ -149,45 +153,25 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
             }
         }
 
-        private string GetAbsolutePath(string inputPath)
+
+
+        [Then("Click Clear Buton and Verify")]
+        public void ThenClickClearButonAndVerify()
         {
-            if (string.IsNullOrWhiteSpace(inputPath))
-            {
-                throw new ArgumentException("Path cannot be null or empty");
-            }
+            _page.ClearBtn().Click();
+            _output.WriteLine("Cleared");
+            int uiTotalCount = _page.GetTotalCount();
+            _output.WriteLine($"\tUI Total Count After Clearing Result: {uiTotalCount}\n");
+            uiTotalCount.Should().Be(0);
 
-            // Handle both forward and backward slashes
-            string normalizedPath = inputPath.Replace('/', '\\').Trim();
-
-            // Check if path is already absolute
-            if (Path.IsPathRooted(normalizedPath))
-            {
-                // Verify the absolute path exists (file or directory)
-                if (File.Exists(normalizedPath) || Directory.Exists(normalizedPath))
-                {
-                    return normalizedPath;
-                }
-                throw new FileNotFoundException($"The path '{normalizedPath}' does not exist");
-            }
-
-            // Handle relative paths
-            try
-            {
-                string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                string fullPath = Path.GetFullPath(Path.Combine(baseDirectory, normalizedPath));
-
-                // Verify the resolved path exists
-                if (File.Exists(fullPath) || Directory.Exists(fullPath))
-                {
-                    return fullPath;
-                }
-                throw new FileNotFoundException($"The resolved path '{fullPath}' does not exist");
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException($"Failed to resolve path '{inputPath}': {ex.Message}", ex);
-            }
         }
+
+
+
+
+
+
+
 
         private bool ValidateAndUploadImage(string filePath)
         {
@@ -283,7 +267,7 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
                     _output.WriteLine($"Error checking: {item.GetAttribute("class")}");
                 }
             }
-            systemTotal= systemSuccess + systemFail;
+            systemTotal = systemSuccess + systemFail;
             return (systemSuccess, systemFail, systemTotal);
         }
     }

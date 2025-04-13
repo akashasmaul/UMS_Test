@@ -2,26 +2,29 @@
 using OpenQA.Selenium.Support.UI;
 using System.Xml.Linq;
 
-namespace UMS.UI.Test.ERP.Areas.Student.Image
+namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage
 {
-    public class ImageUploadPage : ImageUploadElements
+    public class ImageUploadPage
     {
         private readonly IWebDriver _driver;
+        private readonly ImageUploadElements _ImgUpElement;
         public ImageUploadPage(IWebDriver driver)
         {
             _driver = driver;
+            _ImgUpElement = new ImageUploadElements();
         }
 
-        public IWebElement StudentMenu() => _driver.FindElement(xStudentMenu);
-        public IWebElement ImageNav() => _driver.FindElement(xImageNav);
-        public IWebElement UploadImageNav() => _driver.FindElement(xUploadImageNav);
-        public IWebElement browsenSelect() => _driver.FindElement(xbrowsenSelect);
-        public IWebElement OverWriteCheckbox => _driver.FindElement(xOverWrite);
+        public IWebElement StudentMenu() => _driver.FindElement(_ImgUpElement.xStudentMenu);
+        public IWebElement ImageNav() => _driver.FindElement(_ImgUpElement.xImageNav);
+        public IWebElement UploadImageNav() => _driver.FindElement(_ImgUpElement.xUploadImageNav);
+        public IWebElement browsenSelect() => _driver.FindElement(_ImgUpElement.xbrowsenSelect);
+        public IWebElement OverWriteCheckbox => _driver.FindElement(_ImgUpElement.xOverWrite);
 
-        public IWebElement UploadBtn() => _driver.FindElement(xUploadBtn);
-        public IReadOnlyCollection<IWebElement> GetUploadMessages() => _driver.FindElements(xUploadMessages);
-        public IReadOnlyCollection<IWebElement> GetUploadListItems() => _driver.FindElements(xUploadListItems);
-        
+        public IWebElement UploadBtn() => _driver.FindElement(_ImgUpElement.xUploadBtn);
+        public IReadOnlyCollection<IWebElement> GetUploadMessages() => _driver.FindElements(_ImgUpElement.xUploadMessages);
+        public IReadOnlyCollection<IWebElement> GetUploadListItems() => _driver.FindElements(_ImgUpElement.xUploadListItems);
+        public IWebElement ClearBtn() => _driver.FindElement(_ImgUpElement.clearBtn);
+
         public void SetOverwrite(bool shouldCheck)
         {
             var checkbox = OverWriteCheckbox;
@@ -41,26 +44,26 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
 
         public int GetSucceedCount()
         {
-            string succeedCountValue = _driver.FindElement(xSucceedCount).Text;
+            string succeedCountValue = _driver.FindElement(_ImgUpElement.xSucceedCount).Text;
             int.TryParse(succeedCountValue, out int result);
             return result;
 
         }
         public int GetFailCount()
         {
-            string failCountValue = _driver.FindElement(xFailedCount).Text;
-            int.TryParse (failCountValue, out int result);
+            string failCountValue = _driver.FindElement(_ImgUpElement.xFailedCount).Text;
+            int.TryParse(failCountValue, out int result);
             return result;
         }
         public int GetDuplicateCount()
         {
-            string duplicateCountValue = _driver.FindElement(xDuplicateCount).Text;
+            string duplicateCountValue = _driver.FindElement(_ImgUpElement.xDuplicateCount).Text;
             int.TryParse(duplicateCountValue, out int result);
             return result;
         }
         public int GetTotalCount()
         {
-            string totalCountValue = _driver.FindElement(xTotalCount).Text;
+            string totalCountValue = _driver.FindElement(_ImgUpElement.xTotalCount).Text;
             int.TryParse(totalCountValue, out int result);
             return result;
         }
