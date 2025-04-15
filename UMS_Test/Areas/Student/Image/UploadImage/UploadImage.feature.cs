@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace UMS.UI.Test.ERP.Areas.Student.Image
+namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage
 {
     using Reqnroll;
     using System;
@@ -26,7 +26,7 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Areas/Student/Image", "UploadImage", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Areas/Student/Image/UploadImage", "UploadImage", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
@@ -92,20 +92,20 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
             await this.TestTearDownAsync();
         }
         
-        [Xunit.SkippableTheoryAttribute(DisplayName="UploadImage")]
+        [Xunit.SkippableTheoryAttribute(DisplayName="Image Upload")]
         [Xunit.TraitAttribute("FeatureTitle", "UploadImage")]
-        [Xunit.TraitAttribute("Description", "UploadImage")]
+        [Xunit.TraitAttribute("Description", "Image Upload")]
         [Xunit.TraitAttribute("Category", "NeedsLogin")]
-        [Xunit.TraitAttribute("Category", "DataSource:../../../TestData/Student/ImageUpload/ImageData.xlsx")]
+        [Xunit.TraitAttribute("Category", "DataSource:../../../../TestData/Student/Image/UploadImage/ImageData.xlsx")]
         [Xunit.TraitAttribute("Category", "DataSet:Sheet1")]
-        [Xunit.InlineDataAttribute("Single", "..\\..\\..\\TestData\\Student\\ImageUpload\\Image\\3163728.jpg", "Yes", new string[0])]
-        [Xunit.InlineDataAttribute("Batch", "..\\..\\..\\TestData\\Student\\ImageUpload\\Image", "Yes", new string[0])]
-        [Xunit.InlineDataAttribute("Single", "../../../TestData/Student/ImageUpload/Image/3333424.jpg", "Yes", new string[0])]
-        public async System.Threading.Tasks.Task UploadImage(string imageType, string path, string overWrite, string[] exampleTags)
+        [Xunit.InlineDataAttribute("Single", "..\\..\\..\\TestData\\Student\\Image\\UploadImage\\Image\\3163728.jpg", "Yes", new string[0])]
+        [Xunit.InlineDataAttribute("Batch", "..\\..\\..\\TestData\\Student\\Image\\UploadImage\\Image", "Yes", new string[0])]
+        [Xunit.InlineDataAttribute("Single", "../../../TestData/Student/Image/UploadImage/Image/3333424.jpg", "Yes", new string[0])]
+        public async System.Threading.Tasks.Task ImageUpload(string imageType, string path, string overWrite, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "NeedsLogin",
-                    "DataSource:../../../TestData/Student/ImageUpload/ImageData.xlsx",
+                    "DataSource:../../../../TestData/Student/Image/UploadImage/ImageData.xlsx",
                     "DataSet:Sheet1"};
             if ((exampleTags != null))
             {
@@ -116,7 +116,7 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image
             argumentsOfScenario.Add("ImageType", imageType);
             argumentsOfScenario.Add("Path", path);
             argumentsOfScenario.Add("OverWrite", overWrite);
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("UploadImage", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Image Upload", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

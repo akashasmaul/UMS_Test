@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UMS.UI.Test.ERP.Areas.Student.Image.ImageStatus
+{
+    class note
+    {
+
+        private void SelectMultiOptions(Func<IWebElement> dropdownToggleFunc, Func<string,
+                                        IWebElement> optionLocatorFunc, Func<IWebElement> selectAllLocatorFunc,
+                                        string optionList)
+        {
+            if (string.IsNullOrWhiteSpace(optionList))
+                return;
+
+            dropdownToggleFunc().Click();
+
+           new WebDriverWait(_page.GetDriver(), TimeSpan.FromSeconds(3)).Until(d => selectAllLocatorFunc().Displayed);
+
+            foreach (var item in optionList.Split(','))
+            {
+                var trimmed = item.Trim();
+
+                if (string.IsNullOrWhiteSpace(trimmed))
+                    continue;
+                if (trimmed.Equals("All", StringComparison.OrdinalIgnoreCase) || trimmed.Equals("Select All", StringComparison.OrdinalIgnoreCase))
+                {
+                    var selectAll = selectAllLocatorFunc();
+                    if (!selectAll.Selected)
+                        selectAll.Click();
+                }
+                else
+                {
+                    var option = optionLocatorFunc(trimmed);
+                    if (!option.Selected)
+                        option.Click();
+                }
+            }
+
+            try { dropdownToggleFunc().Click(); } catch (Exception ex) { Console.WriteLine(ex.Message); }
+        }
+
+
+    }
+}
