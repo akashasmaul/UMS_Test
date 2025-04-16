@@ -18,7 +18,7 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage
         public By xFailedCount = By.Id("FailedCounter");
         public By xTotalCount = By.Id("TotalCounter");
         public By clearBtn = By.Id("clearDiv");
-        
+
 
 
 

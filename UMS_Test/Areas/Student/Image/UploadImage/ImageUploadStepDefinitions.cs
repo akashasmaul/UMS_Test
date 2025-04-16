@@ -1,10 +1,7 @@
 ﻿using FluentAssertions;
 using FluentAssertions.Execution;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using System.Security.AccessControl;
 using UMS.UI.Test.ERP.TestFiles.Support;
-using Xunit;
 using Xunit.Abstractions;
 
 namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UMS.UI.Test.ERP.TestFiles.Support
+﻿namespace UMS.UI.Test.ERP.TestFiles.Support
 {
     public class PathHelper
     {

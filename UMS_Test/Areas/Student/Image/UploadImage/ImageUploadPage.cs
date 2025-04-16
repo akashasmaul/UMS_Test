@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System.Xml.Linq;
 
 namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage
 {

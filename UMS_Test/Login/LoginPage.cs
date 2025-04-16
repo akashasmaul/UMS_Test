@@ -1,6 +1,4 @@
 ﻿using OpenQA.Selenium;
-using Reqnroll.BoDi;
-using System.ComponentModel;
 using UMS.UI.Test.BusinessModel.Helper;
 
 namespace UMS.UI.Test.ERP.Login

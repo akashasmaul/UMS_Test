@@ -21,8 +21,10 @@ Scenario: Check Image Status
 	And Select Batch "<Batch>"
 	And Click Count Button and Get Count
 	And Select Information "<Information>"
+	And Remove Information "<RemoveInfo>"
 	And Enter Reg No./Roll No. "<RegOrRoll>"
 	And Enter Nickname "<NickName>"
 	And Enter Mobile Number "<MobileNumber>"
-	
+	And Click View Button
 	Then DataTable Should Appear
+	And Export the DataTable "No"

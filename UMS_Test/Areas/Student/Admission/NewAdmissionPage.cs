@@ -18,7 +18,7 @@ namespace UMS.UI.Test.ERP.Areas.Student.Admission
         }
 
         public IWebElement StudentButton() => driver.FindElement(newElement.xStudentButton);
-       
+
         public IWebElement AdmissionNav() => driver.FindElement(xAdmissionNav);
 
         public IWebElement NewAdmissionButton() => driver.FindElement(xNewAdmissionButton);

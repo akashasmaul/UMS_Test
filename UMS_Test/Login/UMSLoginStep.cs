@@ -1,8 +1,3 @@
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using Reqnroll.BoDi;
-using UMS.UI.Test.BusinessModel.Helper;
-
 namespace UMS.UI.Test.ERP.Login
 {
     [Binding]
@@ -13,13 +8,13 @@ namespace UMS.UI.Test.ERP.Login
         public UMSLoginStep(LoginPage loginPage)
         {
             _loginPage = loginPage;
-            
+
         }
 
         [Given("Go to the URL")]
         public void GivenGoToTheURL()
         {
-            _loginPage.GoToBaseUrl(); 
+            _loginPage.GoToBaseUrl();
         }
 
         [Given("Give Credentials and Hit LoginBtn")]

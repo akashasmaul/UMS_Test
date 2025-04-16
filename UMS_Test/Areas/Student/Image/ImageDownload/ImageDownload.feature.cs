@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace UMS.UI.Test.ERP.Areas.Student.Image.ImageStatus
+namespace UMS.UI.Test.ERP.Areas.Student.Image.ImageDownload
 {
     using Reqnroll;
     using System;
@@ -19,21 +19,21 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.ImageStatus
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class ImageStatusFeature : object, Xunit.IClassFixture<ImageStatusFeature.FixtureData>, Xunit.IAsyncLifetime
+    public partial class ImageDownloadFeature : object, Xunit.IClassFixture<ImageDownloadFeature.FixtureData>, Xunit.IAsyncLifetime
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Areas/Student/Image/ImageStatus", "ImageStatus", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Areas/Student/Image/ImageDownload", "ImageDownload", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "ImageStatus.feature"
+#line 1 "ImageDownload.feature"
 #line hidden
         
-        public ImageStatusFeature(ImageStatusFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public ImageDownloadFeature(ImageDownloadFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
         }
@@ -92,19 +92,21 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.ImageStatus
             await this.TestTearDownAsync();
         }
         
-        [Xunit.SkippableTheoryAttribute(DisplayName="Check Image Status")]
-        [Xunit.TraitAttribute("FeatureTitle", "ImageStatus")]
-        [Xunit.TraitAttribute("Description", "Check Image Status")]
+        [Xunit.SkippableTheoryAttribute(DisplayName="DownloadImage")]
+        [Xunit.TraitAttribute("FeatureTitle", "ImageDownload")]
+        [Xunit.TraitAttribute("Description", "DownloadImage")]
         [Xunit.TraitAttribute("Category", "NeedsLogin")]
-        [Xunit.TraitAttribute("Category", "DataSource:../../../../TestData/Student/Image/ImageStatus/ImageStatusData.xlsx")]
+        [Xunit.TraitAttribute("Category", "DataSource:../../../../TestData/Student/Image/ImageDownload/ImageDownloadData.xls" +
+            "x")]
         [Xunit.TraitAttribute("Category", "DataSet:Sheet1")]
-        [Xunit.InlineDataAttribute("udvash", "Engineering Admission Program", "2024", " Engineering Full Course (Offline),   Engineering Full Course (Combo)    ", "All", "Bangla", " Farmgate (MT) Udvash", " Malek Tower Campus (Farmgate (MT) Udvash)", "Online Batch", "03:00 PM to 05:30 PM", "Combo", "Registration No, Full Name, Mobile Number(Student)", "", "", "", "Missing Image", new string[0])]
+        [Xunit.TraitAttribute("Category", "tag1")]
+        [Xunit.InlineDataAttribute("udvash", "Engineering Admission Program", "2024", " Engineering Full Course (Offline),   Engineering Full Course (Combo)    ", "All", "Bangla", " Farmgate (MT) Udvash", " Malek Tower Campus (Farmgate (MT) Udvash)", "Online Batch", "03:00 PM to 05:30 PM", "Combo", "Registration No, Full Name, Mobile Number(Student)", "", "", "", new string[0])]
         [Xunit.InlineDataAttribute("UDVASH", "Engineering Admission Program", "2024", " Engineering Full Course (Offline)", "Male, female", "english, Select All", " Farmgate (MT) Udvash", "Concord Tower Campus  (Farmgate (MT) Udvash),  Malek Tower Campus (Farmgate (MT) " +
-            "Udvash)", "Sat, Mon, Wed", "01:30 PM to 04:00 PM", "Progga-01", "roll , image, Mobile Number", "", "", "", "Missing Image", new string[0])]
+            "Udvash)", "Sat, Mon, Wed", "01:30 PM to 04:00 PM", "Progga-01", "roll , image, Mobile Number", "", "", "", new string[0])]
         [Xunit.InlineDataAttribute("Udvash", "Engineering Admission Program", "2024", " Engineering Full Course (Offline)", "Male, female", "english, Select All", " Farmgate (MT) Udvash", "Concord Tower Campus  (Farmgate (MT) Udvash),  Malek Tower Campus (Farmgate (MT) " +
-            "Udvash)", "Sun, Tue", "10:15 AM to 12:45 PM, 04:15 PM to 06:45 PM", "Protigga-02, Prottasha-02", "Roll No., Nick Name, Full Name, Mobile Number(Father)", "10216600311", "Mahi", "", "Missing Image", new string[0])]
-        [Xunit.InlineDataAttribute("udVAsh", "Engineering Admission Program", "2024", "select All", "male,female,combined", "BanglA, English", " Farmgate (MT) Udvash", "Concord Tower Campus  (Farmgate (MT) Udvash), select all", "Sat, Mon, Wed, Sun, Tue, Thu", "10:15 AM to 12:45 PM, All", "All", "Select All ", "3309937", "Akash", "01781770073", "Missing Image", new string[0])]
-        public async System.Threading.Tasks.Task CheckImageStatus(
+            "Udvash)", "Sun, Tue", "10:15 AM to 12:45 PM, 04:15 PM to 06:45 PM", "Protigga-02, Prottasha-02", "Roll No., Nick Name, Full Name, Mobile Number(Father)", "10216600311", "Mahi", "", new string[0])]
+        [Xunit.InlineDataAttribute("udVAsh", "Engineering Admission Program", "2024", "select All", "male,female,combined", "BanglA, English", " Farmgate (MT) Udvash", "Concord Tower Campus  (Farmgate (MT) Udvash), select all", "Sat, Mon, Wed, Sun, Tue, Thu", "10:15 AM to 12:45 PM, All", "All", "Select All ", "3309937", "Akash", "01781770073", new string[0])]
+        public async System.Threading.Tasks.Task DownloadImage(
                     string organization, 
                     string program, 
                     string session, 
@@ -120,13 +122,14 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.ImageStatus
                     string regOrRoll, 
                     string nickName, 
                     string mobileNumber, 
-                    string imageStatus, 
                     string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "NeedsLogin",
-                    "DataSource:../../../../TestData/Student/Image/ImageStatus/ImageStatusData.xlsx",
-                    "DataSet:Sheet1"};
+                    "DataSource:../../../../TestData/Student/Image/ImageDownload/ImageDownloadData.xls" +
+                        "x",
+                    "DataSet:Sheet1",
+                    "tag1"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -148,8 +151,7 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.ImageStatus
             argumentsOfScenario.Add("RegOrRoll", regOrRoll);
             argumentsOfScenario.Add("NickName", nickName);
             argumentsOfScenario.Add("MobileNumber", mobileNumber);
-            argumentsOfScenario.Add("ImageStatus", imageStatus);
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Check Image Status", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("DownloadImage", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -161,73 +163,49 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 await this.ScenarioStartAsync();
 #line 8
- await testRunner.GivenAsync("Go to Image Status Page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+ await testRunner.GivenAsync("Go to Image Download Page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 9
- await testRunner.WhenAsync("Missing Image Page Loads", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync("Missing Image Download Page Loads", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 10
- await testRunner.AndAsync(string.Format("Select Organization \"{0}\"", organization), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" Organization", organization), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 11
- await testRunner.AndAsync(string.Format("Select Program \"{0}\"", program), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" Program", program), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 12
- await testRunner.AndAsync(string.Format("Select Session \"{0}\"", session), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" Session", session), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 13
- await testRunner.AndAsync(string.Format("Select Image Status \"{0}\"", imageStatus), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" Course", course), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 14
- await testRunner.AndAsync(string.Format("Select Courses \"{0}\"", course), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" Gender", gender), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 15
- await testRunner.AndAsync(string.Format("Select Gender \"{0}\"", gender), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" Version", version), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 16
- await testRunner.AndAsync(string.Format("Select Version \"{0}\"", version), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" Branch", branch), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 17
- await testRunner.AndAsync(string.Format("Select Branch \"{0}\"", branch), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" Campus", campus), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 18
- await testRunner.AndAsync(string.Format("Select Campus \"{0}\"", campus), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" BatchType", batchType), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 19
- await testRunner.AndAsync(string.Format("Select BatchType \"{0}\"", batchType), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" BatchTime", batchTime), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 20
- await testRunner.AndAsync(string.Format("Select BatchTime \"{0}\"", batchTime), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select \"{0}\" Batch", batch), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 21
- await testRunner.AndAsync(string.Format("Select Batch \"{0}\"", batch), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync("Click Count Button and Get Counts", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 22
- await testRunner.AndAsync("Click Count Button and Get Count", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 23
- await testRunner.AndAsync(string.Format("Select Information \"{0}\"", information), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 24
- await testRunner.AndAsync("Remove Information \"<RemoveInfo>\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 25
- await testRunner.AndAsync(string.Format("Enter Reg No./Roll No. \"{0}\"", regOrRoll), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 26
- await testRunner.AndAsync(string.Format("Enter Nickname \"{0}\"", nickName), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 27
- await testRunner.AndAsync(string.Format("Enter Mobile Number \"{0}\"", mobileNumber), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 28
- await testRunner.AndAsync("Click View Button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 29
- await testRunner.ThenAsync("DataTable Should Appear", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
-#line 30
- await testRunner.AndAsync("Export the DataTable \"No\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync("Click Image Download Button \"Yes\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
@@ -240,12 +218,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             async System.Threading.Tasks.Task Xunit.IAsyncLifetime.InitializeAsync()
             {
-                await ImageStatusFeature.FeatureSetupAsync();
+                await ImageDownloadFeature.FeatureSetupAsync();
             }
             
             async System.Threading.Tasks.Task Xunit.IAsyncLifetime.DisposeAsync()
             {
-                await ImageStatusFeature.FeatureTearDownAsync();
+                await ImageDownloadFeature.FeatureTearDownAsync();
             }
         }
     }
