@@ -6,7 +6,7 @@
 @tag1
 Scenario: DownloadImage
 	Given Go to Image Download Page
-	When Missing Image Download Page Loads
+	When Image Download Page Loads
 	And Select "<Organization>" Organization
 	And Select "<Program>" Program
 	And Select "<Session>" Session

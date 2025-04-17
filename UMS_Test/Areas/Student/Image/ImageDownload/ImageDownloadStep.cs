@@ -25,8 +25,8 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.ImageDownload
             _page.ImageDownloadNav().Click();
         }
 
-        [When("Missing Image Download Page Loads")]
-        public void WhenMissingImageDownloadPageLoads()
+        [When("Image Download Page Loads")]
+        public void WhenImageDownloadPageLoads()
         {
             Assert.True(_page.ImageDownloadPanel().Displayed, "Download Image panel should be displayed");
             Assert.Contains("Image Download", _page.ImageDownloadPanel().Text);

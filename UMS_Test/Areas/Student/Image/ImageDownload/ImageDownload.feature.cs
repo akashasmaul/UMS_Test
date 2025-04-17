@@ -166,7 +166,7 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("Go to Image Download Page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 9
- await testRunner.WhenAsync("Missing Image Download Page Loads", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync("Image Download Page Loads", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 10
  await testRunner.AndAsync(string.Format("Select \"{0}\" Organization", organization), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

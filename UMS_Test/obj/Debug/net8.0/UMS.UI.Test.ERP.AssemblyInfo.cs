@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UMS.UI.Test.ERP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f18e22427eeea18241aa646006c014e09ec55e79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fcfe6cca7ca1a542201ae5cb37b651d116287d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("UMS.UI.Test.ERP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UMS.UI.Test.ERP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -23,7 +23,6 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage
             _page = page;
             _output = output;
             _pathHelper = new PathHelper();
-
         }
 
         [Given("Go to the Upload Image Page")]
@@ -109,8 +108,6 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage
             _output.WriteLine($"\t❌ Fail Messages Count: {systemFailCount}");
             _output.WriteLine($"\t🟰 Total Processed: {systemTotalCount}");
 
-
-
             // 5. Get and show UI counters
 
             int uiSuccessCount = _page.GetSucceedCount();
@@ -150,25 +147,16 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage
             }
         }
 
-
-
         [Then("Click Clear Buton and Verify")]
         public void ThenClickClearButonAndVerify()
         {
+            Thread.Sleep(3000);
             _page.ClearBtn().Click();
             _output.WriteLine("Cleared");
             int uiTotalCount = _page.GetTotalCount();
             _output.WriteLine($"\tUI Total Count After Clearing Result: {uiTotalCount}\n");
             uiTotalCount.Should().Be(0);
-
         }
-
-
-
-
-
-
-
 
         private bool ValidateAndUploadImage(string filePath)
         {
