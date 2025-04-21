@@ -1,6 +1,6 @@
 ﻿Feature: CopyImage
 
-@NeedsLogin
+
 @DataSource:../../../../TestData/Student/Image/ImageCopy/ImageCopyData.xlsx @DataSet:Sheet1
 
 @tag1

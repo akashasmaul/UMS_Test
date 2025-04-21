@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using FluentAssertions.Execution;
 using OpenQA.Selenium;
-using UMS.UI.Test.ERP.TestFiles.Support;
+using UMS.UI.Test.BusinessModel.Helper;
 using Xunit.Abstractions;
 
 namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage

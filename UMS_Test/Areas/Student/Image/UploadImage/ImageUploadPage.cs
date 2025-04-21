@@ -13,15 +13,15 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage
             _ImgUpElement = new ImageUploadElements();
         }
 
-        public IWebElement StudentMenu() => _driver.FindElement(_ImgUpElement.xStudentMenu);
-        public IWebElement ImageNav() => _driver.FindElement(_ImgUpElement.xImageNav);
-        public IWebElement UploadImageNav() => _driver.FindElement(_ImgUpElement.xUploadImageNav);
-        public IWebElement browsenSelect() => _driver.FindElement(_ImgUpElement.xbrowsenSelect);
-        public IWebElement OverWriteCheckbox => _driver.FindElement(_ImgUpElement.xOverWrite);
+        public IWebElement StudentMenu() => _driver.FindElement(_ImgUpElement.StudentMenu);
+        public IWebElement ImageNav() => _driver.FindElement(_ImgUpElement.ImageNav);
+        public IWebElement UploadImageNav() => _driver.FindElement(_ImgUpElement.UploadImageNav);
+        public IWebElement browsenSelect() => _driver.FindElement(_ImgUpElement.browsenSelect);
+        public IWebElement OverWriteCheckbox => _driver.FindElement(_ImgUpElement.OverWrite);
 
-        public IWebElement UploadBtn() => _driver.FindElement(_ImgUpElement.xUploadBtn);
-        public IReadOnlyCollection<IWebElement> GetUploadMessages() => _driver.FindElements(_ImgUpElement.xUploadMessages);
-        public IReadOnlyCollection<IWebElement> GetUploadListItems() => _driver.FindElements(_ImgUpElement.xUploadListItems);
+        public IWebElement UploadBtn() => _driver.FindElement(_ImgUpElement.UploadBtn);
+        public IReadOnlyCollection<IWebElement> GetUploadMessages() => _driver.FindElements(_ImgUpElement.UploadMessages);
+        public IReadOnlyCollection<IWebElement> GetUploadListItems() => _driver.FindElements(_ImgUpElement.UploadListItems);
         public IWebElement ClearBtn() => _driver.FindElement(_ImgUpElement.clearBtn);
 
         public void SetOverwrite(bool shouldCheck)
@@ -43,26 +43,26 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.UploadImage
 
         public int GetSucceedCount()
         {
-            string succeedCountValue = _driver.FindElement(_ImgUpElement.xSucceedCount).Text;
+            string succeedCountValue = _driver.FindElement(_ImgUpElement.SucceedCount).Text;
             int.TryParse(succeedCountValue, out int result);
             return result;
 
         }
         public int GetFailCount()
         {
-            string failCountValue = _driver.FindElement(_ImgUpElement.xFailedCount).Text;
+            string failCountValue = _driver.FindElement(_ImgUpElement.FailedCount).Text;
             int.TryParse(failCountValue, out int result);
             return result;
         }
         public int GetDuplicateCount()
         {
-            string duplicateCountValue = _driver.FindElement(_ImgUpElement.xDuplicateCount).Text;
+            string duplicateCountValue = _driver.FindElement(_ImgUpElement.DuplicateCount).Text;
             int.TryParse(duplicateCountValue, out int result);
             return result;
         }
         public int GetTotalCount()
         {
-            string totalCountValue = _driver.FindElement(_ImgUpElement.xTotalCount).Text;
+            string totalCountValue = _driver.FindElement(_ImgUpElement.TotalCount).Text;
             int.TryParse(totalCountValue, out int result);
             return result;
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UMS.UI.Test.BusinessModel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fcfe6cca7ca1a542201ae5cb37b651d116287d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d72a4ea45ae1c9bc94a79a2fc8faedfe753fd60")]
 [assembly: System.Reflection.AssemblyProductAttribute("UMS.UI.Test.BusinessModel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UMS.UI.Test.BusinessModel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

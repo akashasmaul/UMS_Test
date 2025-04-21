@@ -95,7 +95,6 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.CopyImage
         [Xunit.SkippableTheoryAttribute(DisplayName="CopyImage")]
         [Xunit.TraitAttribute("FeatureTitle", "CopyImage")]
         [Xunit.TraitAttribute("Description", "CopyImage")]
-        [Xunit.TraitAttribute("Category", "NeedsLogin")]
         [Xunit.TraitAttribute("Category", "DataSource:../../../../TestData/Student/Image/ImageCopy/ImageCopyData.xlsx")]
         [Xunit.TraitAttribute("Category", "DataSet:Sheet1")]
         [Xunit.TraitAttribute("Category", "tag1")]
@@ -107,7 +106,6 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.CopyImage
         public async System.Threading.Tasks.Task CopyImage(string organization, string program, string session, string targetOrganization, string targetProgram, string targetSession, string rowCount, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "NeedsLogin",
                     "DataSource:../../../../TestData/Student/Image/ImageCopy/ImageCopyData.xlsx",
                     "DataSet:Sheet1",
                     "tag1"};

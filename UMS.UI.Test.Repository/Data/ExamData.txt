@@ -1,0 +1,29 @@
+Organization: UDVASH
+Program: Varsity 'KA' Admission Program
+Session: 2024
+Course: Varsity 'KA' & Guccho Full Course (Offline)
+ExamType: mcq
+Version: All
+McqFullMarks: 10
+SaqFullMarks: 
+ExamPlatform: Live Exam
+IsMarksCalculation: 
+IsWord: yes
+ExamSubjectType: mcq+single
+McqAnswerOptions: 4
+McqSubject: Physics
+SaqSubject: 
+IsClassEvaluation: 
+McqTotalQuestions: 10
+SaqTotalQuestions: 
+McqQuestionsCount: 10
+SaqQuestionsCount: 
+McqUniqueSet: 2
+SaqUniqueSet: 
+IsPrintPdf: 
+ExamId: 87600
+ExamName: Single MCQ Live Exam_10154217-
+ExamCode: 297
+ExamStartTime: 03/10/2025 04:04 PM
+RoutineId: 86172
+CreationDate: 

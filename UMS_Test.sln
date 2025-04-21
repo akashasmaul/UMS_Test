@@ -5,7 +5,13 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UMS.UI.Test.ERP", "UMS_Test\UMS.UI.Test.ERP.csproj", "{35BE0179-333B-4E87-84C7-F7E51D3562A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMS.UI.Test.BusinessModel", "UMS.UI.Test.BusinessModel\UMS.UI.Test.BusinessModel.csproj", "{CD980B58-62B2-467C-8770-9635B82489C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UMS.UI.Test.BusinessModel", "UMS.UI.Test.BusinessModel\UMS.UI.Test.BusinessModel.csproj", "{CD980B58-62B2-467C-8770-9635B82489C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7ADE96B9-8BA9-44E5-AA4B-938E59B197B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{B1491514-343C-4634-8E7F-B22D5E819387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMS.UI.Test.Repository", "UMS.UI.Test.Repository\UMS.UI.Test.Repository.csproj", "{BE53AD3C-E84A-4AAA-AFAA-900F1B271001}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,18 @@ Global
 		{CD980B58-62B2-467C-8770-9635B82489C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD980B58-62B2-467C-8770-9635B82489C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD980B58-62B2-467C-8770-9635B82489C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE53AD3C-E84A-4AAA-AFAA-900F1B271001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE53AD3C-E84A-4AAA-AFAA-900F1B271001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE53AD3C-E84A-4AAA-AFAA-900F1B271001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE53AD3C-E84A-4AAA-AFAA-900F1B271001}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35BE0179-333B-4E87-84C7-F7E51D3562A3} = {B1491514-343C-4634-8E7F-B22D5E819387}
+		{CD980B58-62B2-467C-8770-9635B82489C8} = {7ADE96B9-8BA9-44E5-AA4B-938E59B197B3}
+		{BE53AD3C-E84A-4AAA-AFAA-900F1B271001} = {7ADE96B9-8BA9-44E5-AA4B-938E59B197B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F62CF79E-3DEF-4B5B-87EE-C4331D208EF9}

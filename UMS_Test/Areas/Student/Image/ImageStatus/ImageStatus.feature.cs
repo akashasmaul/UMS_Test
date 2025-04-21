@@ -167,16 +167,16 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.WhenAsync("Missing Image Page Loads", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 10
- await testRunner.AndAsync(string.Format("Select Organization \"{0}\"", organization), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select Organization \"{0}\" ImgStat", organization), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 11
- await testRunner.AndAsync(string.Format("Select Program \"{0}\"", program), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select Program \"{0}\" ImgStat", program), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 12
- await testRunner.AndAsync(string.Format("Select Session \"{0}\"", session), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select Session \"{0}\" ImgStat", session), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 13
- await testRunner.AndAsync(string.Format("Select Image Status \"{0}\"", imageStatus), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select Image Status \"{0}\" ImgStat", imageStatus), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 14
  await testRunner.AndAsync(string.Format("Select Courses \"{0}\"", course), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
@@ -188,7 +188,7 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.AndAsync(string.Format("Select Version \"{0}\"", version), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 17
- await testRunner.AndAsync(string.Format("Select Branch \"{0}\"", branch), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+ await testRunner.AndAsync(string.Format("Select Branch \"{0}\" ImgStat", branch), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 18
  await testRunner.AndAsync(string.Format("Select Campus \"{0}\"", campus), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");

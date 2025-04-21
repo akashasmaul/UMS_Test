@@ -52,7 +52,7 @@
             },
             "EPPlus": {
               "target": "Package",
-              "version": "[7.7.0, )"
+              "version": "[8.0.2, )"
             },
             "ExtentReports": {
               "target": "Package",
@@ -76,25 +76,124 @@
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.30.0, )"
+              "version": "[4.31.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.30.0, )"
+              "version": "[4.31.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[134.0.6998.16500, )"
+              "version": "[135.0.7049.9500, )"
             },
             "SeleniumExtras.WaitHelpers": {
               "target": "Package",
               "version": "[1.0.2, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[3.116.1, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[9.1.0, )"
             },
             "xunit": {
               "target": "Package",
               "version": "[2.9.3, )"
             },
             "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test.Repository\\UMS.UI.Test.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test.Repository\\UMS.UI.Test.Repository.csproj",
+        "projectName": "UMS.UI.Test.Repository",
+        "projectPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test.Repository\\UMS.UI.Test.Repository.csproj",
+        "packagesPath": "C:\\Users\\OPL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\OPL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj": {
+                "projectPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.13.0, )"
+            },
+            "Reqnroll.xUnit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.0.2, )"
             }
@@ -146,6 +245,9 @@
             "projectReferences": {
               "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj": {
                 "projectPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj"
+              },
+              "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test.Repository\\UMS.UI.Test.Repository.csproj": {
+                "projectPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test.Repository\\UMS.UI.Test.Repository.csproj"
               }
             }
           }
@@ -171,7 +273,7 @@
             },
             "EPPlus": {
               "target": "Package",
-              "version": "[7.7.0, )"
+              "version": "[8.0.2, )"
             },
             "ExtentReports": {
               "target": "Package",
@@ -195,19 +297,23 @@
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.30.0, )"
+              "version": "[4.31.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.30.0, )"
+              "version": "[4.31.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[134.0.6998.16500, )"
+              "version": "[135.0.7049.9500, )"
             },
             "SeleniumExtras.WaitHelpers": {
               "target": "Package",
               "version": "[1.0.2, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[9.1.0, )"
             },
             "xunit": {
               "target": "Package",

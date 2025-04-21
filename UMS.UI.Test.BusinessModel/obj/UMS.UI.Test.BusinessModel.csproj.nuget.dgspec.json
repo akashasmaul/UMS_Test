@@ -52,7 +52,7 @@
             },
             "EPPlus": {
               "target": "Package",
-              "version": "[7.7.0, )"
+              "version": "[8.0.2, )"
             },
             "ExtentReports": {
               "target": "Package",
@@ -76,25 +76,35 @@
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.30.0, )"
+              "version": "[4.31.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.30.0, )"
+              "version": "[4.31.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[134.0.6998.16500, )"
+              "version": "[135.0.7049.9500, )"
             },
             "SeleniumExtras.WaitHelpers": {
               "target": "Package",
               "version": "[1.0.2, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[3.116.1, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[9.1.0, )"
             },
             "xunit": {
               "target": "Package",
               "version": "[2.9.3, )"
             },
             "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.0.2, )"
             }

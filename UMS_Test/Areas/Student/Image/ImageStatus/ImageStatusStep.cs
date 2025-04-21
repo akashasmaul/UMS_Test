@@ -33,25 +33,25 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.ImageStatus
             Console.WriteLine("Image Status Page is Loaded");
         }
 
-        [When("Select Organization {string}")]
+        [When("Select Organization {string} ImgStat")]
         public void WhenSelectOrganization(string organization)
         {
             SelectDropdownOption(() => _page.Organization(), organization);
         }
 
-        [When("Select Program {string}")]
+        [When("Select Program {string} ImgStat")]
         public void WhenSelectProgram(string program)
         {
             SelectDropdownOption(() => _page.Program(), program);
         }
 
-        [When("Select Session {string}")]
+        [When("Select Session {string} ImgStat")]
         public void WhenSelectSession(string session)
         {
             SelectDropdownOption(() => _page.Session(), session);
         }
 
-        [When("Select Image Status {string}")]
+        [When("Select Image Status {string} ImgStat")]
         public void WhenSelectImageStatus(string imageStatus)
         {
             SelectDropdownOption(() => _page.ImgStatus(), imageStatus);
@@ -75,7 +75,7 @@ namespace UMS.UI.Test.ERP.Areas.Student.Image.ImageStatus
             SelectMultiOptions(_page.VersionofStudy(), version);
         }
 
-        [When("Select Branch {string}")]
+        [When("Select Branch {string} ImgStat")]
         public void WhenSelectBranch(string branch)
         {
             SelectMultiOptions(_page.BranchId(), branch);

@@ -19,21 +19,21 @@ namespace UMS.UI.Test.ERP.Login
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class UMSLoginFeature : object, Xunit.IClassFixture<UMSLoginFeature.FixtureData>, Xunit.IAsyncLifetime
+    public partial class ErpLoginFeature : object, Xunit.IClassFixture<ErpLoginFeature.FixtureData>, Xunit.IAsyncLifetime
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", "UMS Login", "A short summary of the feature", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", "Erp Login", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
 #line 1 "Login.feature"
 #line hidden
         
-        public UMSLoginFeature(UMSLoginFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public ErpLoginFeature(ErpLoginFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
         }
@@ -92,17 +92,17 @@ namespace UMS.UI.Test.ERP.Login
             await this.TestTearDownAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Admin Login")]
-        [Xunit.TraitAttribute("FeatureTitle", "UMS Login")]
-        [Xunit.TraitAttribute("Description", "Admin Login")]
-        [Xunit.TraitAttribute("Category", "Login")]
-        public async System.Threading.Tasks.Task AdminLogin()
+        [Xunit.SkippableFactAttribute(DisplayName="Erp Login Test")]
+        [Xunit.TraitAttribute("FeatureTitle", "Erp Login")]
+        [Xunit.TraitAttribute("Description", "Erp Login Test")]
+        [Xunit.TraitAttribute("Category", "LoginTest")]
+        public async System.Threading.Tasks.Task ErpLoginTest()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "LoginTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Admin Login", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 6
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Erp Login Test", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -112,14 +112,53 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 7
- await testRunner.GivenAsync("Go to the URL", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
-#line 8
- await testRunner.GivenAsync("Give Credentials and Hit LoginBtn", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+#line 6
+ await testRunner.GivenAsync("Goto Login Page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 9
- await testRunner.ThenAsync("Is Success Login", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+  await testRunner.WhenAsync("Enter email in the field", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line hidden
+#line 11
+   await testRunner.AndAsync("Enter password in the field", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 12
+   await testRunner.AndAsync("Click on the submit button", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 13
+  await testRunner.ThenAsync("Is Success Login", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+#line hidden
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Erp Logout Test")]
+        [Xunit.TraitAttribute("FeatureTitle", "Erp Login")]
+        [Xunit.TraitAttribute("Description", "Erp Logout Test")]
+        [Xunit.TraitAttribute("Category", "LogoutTest")]
+        public async System.Threading.Tasks.Task ErpLogoutTest()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "LogoutTest"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Erp Logout Test", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 17
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+#line 18
+    await testRunner.GivenAsync("The user is already logged in", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+#line hidden
+#line 19
+     await testRunner.WhenAsync("The user clicks the logout button", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line hidden
+#line 20
+     await testRunner.ThenAsync("Assert that user is redirected to login page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
@@ -132,12 +171,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             async System.Threading.Tasks.Task Xunit.IAsyncLifetime.InitializeAsync()
             {
-                await UMSLoginFeature.FeatureSetupAsync();
+                await ErpLoginFeature.FeatureSetupAsync();
             }
             
             async System.Threading.Tasks.Task Xunit.IAsyncLifetime.DisposeAsync()
             {
-                await UMSLoginFeature.FeatureTearDownAsync();
+                await ErpLoginFeature.FeatureTearDownAsync();
             }
         }
     }
