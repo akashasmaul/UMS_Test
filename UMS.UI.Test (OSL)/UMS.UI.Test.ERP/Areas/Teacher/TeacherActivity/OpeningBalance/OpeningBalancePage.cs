@@ -36,8 +36,11 @@ namespace UMS.UI.Test.ERP.Areas.Teacher.TeacherActivity.OpeningBalance
 
         public IWebElement OpeningDate() => _driver.FindElement(_elements.OpeningDate);
         public IWebElement TotalTeacherCountNumber() => _driver.FindElement(_elements.TotalTeacherCountNumber);
-        public IWebElement TotalClassInput(string teacherId) => _driver.FindElement(_elements.TotalClassInputByTeacherId(teacherId));
+        public int GetTotalTeacherRowCount() =>  _driver.FindElements(_elements.TeacherTableRows).Count;
+
+            public IWebElement TotalClassInput(string teacherId) => _driver.FindElement(_elements.TotalClassInputByTeacherId(teacherId));
         public IWebElement SaveBtn() => _driver.FindElement(_elements.SaveBtn);
+        public IWebElement GetSuccessAlertMessage() => _driver.FindElement(_elements.GetOpeningBalanceSuccessMessage);
 
     }
 }

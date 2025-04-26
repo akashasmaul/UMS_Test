@@ -11,8 +11,11 @@
         public By ViewBtn => By.Id("ViewTeacher");
         public By OpeningDate => By.XPath("//input[@id='OpeningDate']");
         public By TotalTeacherCountNumber => By.XPath("//div[contains(text(), 'Total')]/strong");
+        public By TeacherTableRows => By.XPath("//table[@id='openingBalanceTable']/tbody/tr");
         public By TotalClassInputByTeacherId(string teacherId) => By.XPath($"//tr[@id='teacher_{teacherId}']//input[@id='TotalClass']");
         public By SaveBtn => By.XPath("//input[@value='Save Opening Balance']");
+        public By GetOpeningBalanceSuccessMessage => By.XPath("//div[@class='alert alert-success']");
+
 
 
     }

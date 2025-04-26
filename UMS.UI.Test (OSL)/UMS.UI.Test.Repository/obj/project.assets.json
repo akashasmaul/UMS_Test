@@ -6976,11 +6976,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.Repository\\UMS.UI.Test.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.Repository\\UMS.UI.Test.Repository.csproj",
       "projectName": "UMS.UI.Test.Repository",
-      "projectPath": "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.Repository\\UMS.UI.Test.Repository.csproj",
+      "projectPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.Repository\\UMS.UI.Test.Repository.csproj",
       "packagesPath": "C:\\Users\\OPL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.Repository\\obj\\",
+      "outputPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\OPL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6998,8 +6998,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj": {
-              "projectPath": "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj"
+            "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj": {
+              "projectPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj"
             }
           }
         }

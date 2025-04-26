@@ -97,9 +97,9 @@ namespace UMS.UI.Test.ERP.Areas.Teacher.TeacherActivity.OpeningBalance
         [Xunit.TraitAttribute("Description", "SetOpeningBalance")]
         [Xunit.TraitAttribute("Category", "DataSource:../../../../TestData/Teacher/Excel/TeacherActivity.xlsx")]
         [Xunit.TraitAttribute("Category", "DataSet:OpeningBalance")]
-        [Xunit.InlineDataAttribute("Udvash", "496, 9209  22349, 22353 ", "4/24/2025 12:00:00 AM", "96, 09, 49, 53, 73, 85", new string[0])]
+        [Xunit.InlineDataAttribute("Udvash", "496, 9209  22349, 22353 , 22353", "4/24/2025 12:00:00 AM", "96, 09, 49, 53, 73, 85", new string[0])]
         [Xunit.InlineDataAttribute("Udvash", "496 9209 22345 22348 22349 22350 22351 22352 22353", "4-24-2025", "9 8 7 6 5 4 3 2 1 ", new string[0])]
-        [Xunit.InlineDataAttribute("Udvash", "496  9209 22349   22353 22337  22338", "2025-04-24", "12, 10, 0, 14, 58", new string[0])]
+        [Xunit.InlineDataAttribute("Udvash", "496  9209 22349   22337 22336", "2025-04-24", "12, 10, 0, 14, 58", new string[0])]
         public async System.Threading.Tasks.Task SetOpeningBalance(string organization, string tPIN, string openingDate, string classNumber, string[] exampleTags)
         {
             string[] @__tags = new string[] {

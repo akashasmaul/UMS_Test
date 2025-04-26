@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wVSpRSzWSmw=",
+  "dgSpecHash": "7V3UssBvt1s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.ERP\\UMS.UI.Test.ERP.csproj",
+  "projectFilePath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.ERP\\UMS.UI.Test.ERP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OPL\\.nuget\\packages\\cucumber.cucumberexpressions\\17.1.0\\cucumber.cucumberexpressions.17.1.0.nupkg.sha512",
     "C:\\Users\\OPL\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

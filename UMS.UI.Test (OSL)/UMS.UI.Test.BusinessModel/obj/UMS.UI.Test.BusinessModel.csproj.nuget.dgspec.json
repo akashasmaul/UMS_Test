@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj": {}
+    "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj": {
+    "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj",
+        "projectUniqueName": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj",
         "projectName": "UMS.UI.Test.BusinessModel",
-        "projectPath": "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj",
+        "projectPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\UMS.UI.Test.BusinessModel.csproj",
         "packagesPath": "C:\\Users\\OPL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OPL\\source\\repos\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\obj\\",
+        "outputPath": "C:\\Users\\OPL\\source\\repos\\UMS_Test\\UMS.UI.Test (OSL)\\UMS.UI.Test.BusinessModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OPL\\AppData\\Roaming\\NuGet\\NuGet.Config",

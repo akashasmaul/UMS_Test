@@ -39,7 +39,7 @@ namespace UMS.UI.Test.ERP.Areas.Teacher.TeacherActivity.OpeningBalance
         public void WhenEnterTPINTeacherIdForOpeningBalance(string tPIN)
         {
             ProcessTPIN(tPIN);
-            string tpins = string.Join(" ", tpinArray);
+            string tpins = string.Join(" ", tpinArray ?? Array.Empty<string>());
             _page.TPinList().SendKeys(tpins);
         }
 
@@ -52,15 +52,15 @@ namespace UMS.UI.Test.ERP.Areas.Teacher.TeacherActivity.OpeningBalance
         [When("Verify total teacher count matches with TPIN count for OB")]
         public void WhenVerifyTotalTeacherCountMatchesWithTPINCountForOB()
         {
-            string numberText = _page.TotalTeacherCountNumber().Text.Trim();
-            int uiCount = int.Parse(numberText);
+            int uiCount = int.Parse(_page.TotalTeacherCountNumber().Text.Trim());
+            int tableRowCount = _page.GetTotalTeacherRowCount();
 
-            if (uiCount != tpinArray.Length)
-                throw new Exception($"Mismatch: UI shows {uiCount} teachers but was processed {tpinArray.Length} TPINs.");
+            if (uiCount != tpinArray?.Length)
+                _output.WriteLine($"\t• UI shows {uiCount} teachers, but processed {tpinArray?.Length} TPINs.");
 
-            _output.WriteLine($"\t• Total Teacher Count Matched: {uiCount}");
+            Assert.Equal(uiCount, tableRowCount);
+            _output.WriteLine($"• Total Teacher Count Matched: {uiCount}");
         }
-
 
         [When("Select Date {string} for Opening Balance")]
         public void WhenSelectDateForOpeningBalance(string date)
@@ -76,12 +76,18 @@ namespace UMS.UI.Test.ERP.Areas.Teacher.TeacherActivity.OpeningBalance
             string[] classArray = classNumbers.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries)
                                               .Select(x => x.Trim())
                                               .ToArray();
+            _output.WriteLine("Entering Total Class Numbers for Teachers:");
 
+            if (tpinArray == null || classArray == null)
+            {
+                throw new InvalidOperationException("tpinArray or classArray is null. Cannot proceed.");
+            }
             for (int i = 0; i < Math.Min(tpinArray.Length, classArray.Length); i++)
             {
                 var input = _page.TotalClassInput(tpinArray[i]);
                 input.Clear();
                 input.SendKeys(classArray[i]);
+                _output.WriteLine($"\t• TPIN: {tpinArray[i]} → Class: {classArray[i]}");
             }
         }
 
@@ -94,8 +100,11 @@ namespace UMS.UI.Test.ERP.Areas.Teacher.TeacherActivity.OpeningBalance
         [Then("Opening Balance will be Saved Successfully.")]
         public void ThenOpeningBalanceWillBeSavedSuccessfully_()
         {
-            Console.WriteLine("Wait...");
             Thread.Sleep(1000);
+            string message = _page.GetSuccessAlertMessage().Text.Trim();
+            message = message.Replace("×", "").Trim();
+            _output.WriteLine($"\t • Success Message: {message}");
+            Assert.Contains("Class Opening Balance Save Successfully", message);
         }
 
         private void SetDateInPicker(IWebElement element, string date)
@@ -143,6 +152,7 @@ namespace UMS.UI.Test.ERP.Areas.Teacher.TeacherActivity.OpeningBalance
                 .Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(x => x.Trim())
                 .Select(x => int.TryParse(x, out int num) ? (num >= 22337 ? (num + 1).ToString() : num.ToString()) : x)
+                .Distinct()
                 .ToArray();
         }
     }
