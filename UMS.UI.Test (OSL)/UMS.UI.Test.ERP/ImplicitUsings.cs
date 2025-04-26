@@ -1,0 +1,17 @@
+﻿global using AventStack.ExtentReports;
+global using AventStack.ExtentReports.Gherkin;
+global using AventStack.ExtentReports.Gherkin.Model;
+global using AventStack.ExtentReports.Reporter;
+global using AventStack.ExtentReports.Reporter.Config;
+global using Microsoft.AspNetCore.WebUtilities;
+global using Microsoft.Extensions.Configuration;
+global using Newtonsoft.Json.Linq;
+global using OpenQA.Selenium;
+global using OpenQA.Selenium.Chrome;
+global using OpenQA.Selenium.Interactions;
+global using OpenQA.Selenium.Support.UI;
+global using Reqnroll;
+global using Reqnroll.BoDi;
+global using System.Globalization;
+global using System.Text.RegularExpressions;
+global using Xunit;

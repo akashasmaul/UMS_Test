@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Data\UmsTestDB.zip" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\UMS.UI.Test.BusinessModel\UMS.UI.Test.BusinessModel.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\bin\Debug\net8.0\UMS.UI.Test.BusinessModel.deps.json
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\bin\Debug\net8.0\UMS.UI.Test.BusinessModel.dll
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\bin\Debug\net8.0\UMS.UI.Test.BusinessModel.pdb
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\obj\Debug\net8.0\UMS.UI.Test.BusinessModel.csproj.AssemblyReference.cache
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\obj\Debug\net8.0\UMS.UI.Test.BusinessModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\obj\Debug\net8.0\UMS.UI.Test.BusinessModel.AssemblyInfoInputs.cache
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\obj\Debug\net8.0\UMS.UI.Test.BusinessModel.AssemblyInfo.cs
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\obj\Debug\net8.0\UMS.UI.Test.BusinessModel.csproj.CoreCompileInputs.cache
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\obj\Debug\net8.0\UMS.UI.Test.BusinessModel.dll
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\obj\Debug\net8.0\refint\UMS.UI.Test.BusinessModel.dll
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\obj\Debug\net8.0\UMS.UI.Test.BusinessModel.pdb
+C:\Users\OPL\source\repos\UMS.UI.Test (OSL)\UMS.UI.Test.BusinessModel\obj\Debug\net8.0\ref\UMS.UI.Test.BusinessModel.dll
